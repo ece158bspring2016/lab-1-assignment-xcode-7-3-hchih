@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		350F7AA51CC5FA52003D0EC2 /* PlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350F7AA41CC5FA52003D0EC2 /* PlayerCell.swift */; };
+		351F22FA1CC0AAE20034B073 /* PlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351F22F91CC0AAE20034B073 /* PlayersViewController.swift */; };
+		351F22FC1CC0ABB90034B073 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351F22FB1CC0ABB90034B073 /* Player.swift */; };
+		351F22FE1CC0AC530034B073 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351F22FD1CC0AC530034B073 /* SampleData.swift */; };
+		351F23001CC0B4680034B073 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 351F22FF1CC0B4680034B073 /* Images.xcassets */; };
 		3575B2861CBEFB9B005E41B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3575B2851CBEFB9B005E41B6 /* AppDelegate.swift */; };
 		3575B2881CBEFB9B005E41B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3575B2871CBEFB9B005E41B6 /* ViewController.swift */; };
 		3575B28B1CBEFB9B005E41B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3575B2891CBEFB9B005E41B6 /* Main.storyboard */; };
@@ -15,6 +20,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		350F7AA41CC5FA52003D0EC2 /* PlayerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerCell.swift; sourceTree = "<group>"; };
+		351F22F91CC0AAE20034B073 /* PlayersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayersViewController.swift; sourceTree = "<group>"; };
+		351F22FB1CC0ABB90034B073 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		351F22FD1CC0AC530034B073 /* SampleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
+		351F22FF1CC0B4680034B073 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3575B2821CBEFB9B005E41B6 /* Ratings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ratings.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3575B2851CBEFB9B005E41B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3575B2871CBEFB9B005E41B6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,9 +67,14 @@
 				3575B2851CBEFB9B005E41B6 /* AppDelegate.swift */,
 				3575B2871CBEFB9B005E41B6 /* ViewController.swift */,
 				3575B2891CBEFB9B005E41B6 /* Main.storyboard */,
+				350F7AA41CC5FA52003D0EC2 /* PlayerCell.swift */,
+				351F22FB1CC0ABB90034B073 /* Player.swift */,
+				351F22FD1CC0AC530034B073 /* SampleData.swift */,
+				351F22F91CC0AAE20034B073 /* PlayersViewController.swift */,
 				3575B28C1CBEFB9B005E41B6 /* Assets.xcassets */,
 				3575B28E1CBEFB9B005E41B6 /* LaunchScreen.storyboard */,
 				3575B2911CBEFB9B005E41B6 /* Info.plist */,
+				351F22FF1CC0B4680034B073 /* Images.xcassets */,
 			);
 			path = Ratings;
 			sourceTree = "<group>";
@@ -96,6 +111,7 @@
 				TargetAttributes = {
 					3575B2811CBEFB9B005E41B6 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = PJXY7Y63DH;
 					};
 				};
 			};
@@ -123,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3575B2901CBEFB9B005E41B6 /* LaunchScreen.storyboard in Resources */,
+				351F23001CC0B4680034B073 /* Images.xcassets in Resources */,
 				3575B28D1CBEFB9B005E41B6 /* Assets.xcassets in Resources */,
 				3575B28B1CBEFB9B005E41B6 /* Main.storyboard in Resources */,
 			);
@@ -135,8 +152,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				350F7AA51CC5FA52003D0EC2 /* PlayerCell.swift in Sources */,
 				3575B2881CBEFB9B005E41B6 /* ViewController.swift in Sources */,
+				351F22FE1CC0AC530034B073 /* SampleData.swift in Sources */,
+				351F22FA1CC0AAE20034B073 /* PlayersViewController.swift in Sources */,
 				3575B2861CBEFB9B005E41B6 /* AppDelegate.swift in Sources */,
+				351F22FC1CC0ABB90034B073 /* Player.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,22 +269,26 @@
 		3575B2951CBEFB9B005E41B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Ratings/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = annchih.Ratings;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
 		3575B2961CBEFB9B005E41B6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Ratings/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = annchih.Ratings;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -286,6 +311,7 @@
 				3575B2961CBEFB9B005E41B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

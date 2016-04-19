@@ -8,10 +8,11 @@
 
 import UIKit
 
-@UIApplicationMain
+@UIApplicationMain //designate this class to be the entry point for the module
+//To have story board, need to inherit from UIResponder and a UIWindow property
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    var window: UIWindow?
+    var window: UIWindow?//view is put in UIWindow when storyboard is loaded
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
